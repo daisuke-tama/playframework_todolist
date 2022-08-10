@@ -9,6 +9,7 @@
       <li>
         @task.label
         @form(routes.HomeController.deleteTask(task.id)) {
+          @CSRF.formField
           <input type="submit" value="Delete">
         }
       </li>
